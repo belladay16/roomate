@@ -1,0 +1,35 @@
+/* ADD YOUR CUSTOM CSS TO THIS FILE BELOW */
+/* Page background + font */
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: rgb(191, 220, 246);
+}
+
+/* Title styling */
+h1 {
+  color: #447dd3;
+  font-weight: bold;
+}
+
+/* Sidebar styling */
+.nav {
+  background-color: #447dd3;
+}
+
+.nav-item {
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* Card styling */
+.card {
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Images inside cards */
+.card img {
+  height: 200px;
+  object-fit: contain;
+}

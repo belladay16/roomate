@@ -1,45 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="roomate.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Quicksand:wght@300..700&display=swap"
-		rel="stylesheet">
-	<title>Roomate Radar</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Roomate Radar is a web app designed to help roommates manage their shared living space with features like bill splitting, chore scheduling, and a message board for communication.">
+    <meta name="author" content="Bella Day">
+    <title>Roommate Radar</title>
 
-<body>
+   <!-- Bootstrap v5.3.8 -->
+   <!-- LOAD BOOTSTRAP CSS - DO NOT DELETE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <!-- END LOADING BOOTSTRAP CSS -->
+    
+   <!-- Custom styles - add your own CSS to this stylesheet -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+  
 
-	<h1>Roomate Radar</h1>
-	<ul>
-		<li>Bill Split</li>
-		<li>Chore Wheel</li>
-		<li>Boundaries</li>
-		<li>Message Board</li>
-	</ul>
+<div class="container-fluid">
+  <div class="row">
 
+    <!-- SIDEBAR -->
+    <div class="col-md-3">
+      <ul class="nav flex-column bg-primary text-white p-3 vh-100">
+        <li class="nav-item">Bill Split</li>
+        <li class="nav-item">Chore Wheel</li>
+        <li class="nav-item">Boundaries</li>
+        <li class="nav-item">Message Board</li>
+      </ul>
+    </div>
 
-	<article>
-		<div>
-			<h2>Bill Split</h2>
-			<img src="1.png" alt="">
-		</div>
-		<div>
-			<h2>Chore Wheel</h2>
-			<img src="2.png" alt="">
-		</div>
-		<div>
-			<h2>Boundaries</h2>
-			<img src="3.png" alt="">
-		</div>
-	</article>
+    <!-- MAIN CONTENT -->
+    <div class="col-md-9 p-4">
 
-	<div class="board">
-		<h2>Message Board</h2>
-		<img src="4.png" alt="">
-	</div>
+      <h1 class="text-center mb-4">Roommate Radar</h1>
 
-</body>
+      <!-- TOP 3 CARDS -->
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="1.png" class="card-img-top" alt="Pink piggy bank with money sticking out illustration">
+            <div class="card-body">
+              <h2 class="card-title">Bill Split</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="2.png" class="card-img-top" alt="Colorful wheel illustration">
+            <div class="card-body">
+              <h2 class="card-title">Chore Wheel</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="3.png" class="card-img-top" alt="Black and white House Rules illustration">
+            <div class="card-body">
+              <h2 class="card-title">Boundaries</h2>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MESSAGE BOARD -->
+      <div class="card mt-4">
+        <div class="card-body">
+          <h2 class="card-title">Message Board</h2>
+          <img src="4.png" class="img-fluid" alt="Green message board illustration">
+
+          <input class="form-control mt-3" placeholder="Write a message">
+          <button class="btn btn-primary mt-2">Post</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- END LOADING BOOTSTRAP JAVASCRIPT -->
+      
+  </body>
+</html>
