@@ -33,3 +33,13 @@ h1 {
   height: 200px;
   object-fit: contain;
 }
+/* Message Image Centered*/
+#messagepic {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+h2 {
+  text-align: center;
+}
